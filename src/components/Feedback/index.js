@@ -2,7 +2,8 @@ import {Component} from 'react'
 
 import './index.css'
 
-state = {
+class Feedback extends Component {
+  state = {
     isFeedbackSelected: false,
   }
 
@@ -37,7 +38,6 @@ state = {
   }
 
   renderThankYouScreen = () => {
-
     const {resources} = this.props
     const {loveEmojiUrl} = resources
 
@@ -53,7 +53,6 @@ state = {
   }
 
   render() {
-      
     const {isFeedbackSelected} = this.state
 
     return (
@@ -66,7 +65,6 @@ state = {
       </div>
     )
   }
-  
 }
 
 export default Feedback
